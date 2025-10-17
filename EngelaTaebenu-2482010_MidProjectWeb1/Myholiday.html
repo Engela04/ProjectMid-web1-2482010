@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="icon" href="Sky.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liburanku</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #222;
+        min-height: 100vh;
+      }
+      header {
+        background: #383434;
+        color: #fff;
+        text-align: center;
+        padding: 0 0 22px 0;
+        box-shadow: 0 2px 25px rgba(30,40,90,0.05);
+      }
+      nav {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        background: #791313;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 32px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 70px;
+        display: inline-block;
+        transition: background .15s;
+        border-radius: 8px;
+      }
+      nav a:hover, nav a.active {
+        background: #383434;
+        color: #fff;
+      }
+      h1 {
+        font-size: 2.1em;
+        font-weight: bold;
+        margin-top: 18px;
+        margin-bottom: 6px;
+      }
+      section {
+        max-width: 650px;
+        margin: 44px auto 38px auto;
+        padding: 30px 28px 28px 28px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(20,40,80,0.11);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 30px 0 20px 0;
+      }
+      .center img {
+        width: 260px;
+        max-width: 98vw;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(90,120,160,0.12);
+        margin-bottom: 6px;
+        background: #fff;
+        display: block;
+        object-fit: unset;
+      }
+      figcaption {
+        font-size: 1.12em;
+        font-weight: 500;
+        padding-top: 2px;
+        color: #aa4e4e;
+        text-align: center;
+      }
+      .left {
+        text-align: left;
+        width: 100%;
+      }
+      p {
+        font-size: 1.09em;
+        line-height: 1.7;
+        margin-top: 10px;
+        margin-bottom: 16px;
+      }
+      b {
+        color: #810b08;
+      }
+      .gallery-title {
+        font-size: 1.19em;
+        font-weight: bold;
+        color: #a03232;
+        margin-top: 26px;
+        margin-bottom: 15px;
+        letter-spacing: .5px;
+      }
+      .gallery-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+        justify-content: center;
+        margin: 0 0 16px 0;
+        width: 100%;
+      }
+      .gallery-flex img {
+        width: 128px;
+        height: 88px;
+        border-radius: 10px;
+        object-fit: contain; /* gambar selalu utuh! */
+        box-shadow: 0 2px 8px rgba(212, 73, 73, 0.1);
+        background: #eaeaea;
+        transition: transform 0.2s;
+        display: block;
+      }
+      .gallery-flex img:hover {
+        transform: scale(1.08);
+        box-shadow: 0px 4px 16px rgba(129, 14, 33, 0.14);
+      }
+      footer {
+        background-color: #611818;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+        font-size: 0.95em;
+        border-radius: 0 0 10px 10px;
+      }
+      @media (max-width:700px) {
+        section { max-width:97vw; padding: 14px 3vw;}
+        .center img { width:96vw; max-width:260px; }
+        .gallery-flex img { width: 44vw; max-width: 148px; height: 70px; }
+        nav a { padding: 0 14px; font-size: 1em; line-height: 44px;}
+        h1 { font-size: 1.2em;}
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="myholiday.html" class="active">My Holiday</a>
+            <a href="registration.html">Registration</a>
+        </nav>
+        <h1>Liburanku</h1>
+    </header>
+    <section>
+        <p><b>Nama:</b> Engela KTaebenu</p>
+        <p><b>NIM:</b> 2482010</p>
+        <div class="center">
+            <img src="Di Rumah Aja.jpg" alt="Di Rumah Aja">
+            <figcaption><b>Di Rumah Aja</b></figcaption>
+        </div>
+        <p class="left">
+          Liburan semester kali ini aku habiskan di rumah saja. Awalnya aku merasa kecewa karena tidak bisa pergi jalan-jalan seperti teman-temanku.
+        ada yang liburan ke pantai, ada juga yang pulang kampung. Sementara aku hanya di rumah bersama keluarga. 
+        Tetapi setelah beberapa hari, aku mulai sadar kalau liburan di rumah juga bisa membuatku senang.
+        </p>
+        <p class="left">
+          Aku mulai mencoba berbagai hal baru di rumah. Aku membantu ibu memasak, belajar memasak beberapa resep baru yang aku temukan di instagram.
+        Aku juga mulai membaca buku yang sudah lama disimpan di rumah tapi belum sempat aku baca. Aku menemukan banyak cerita menarik dan pelajaran berharga dari buku-buku tersebut.
+        Selain itu, aku juga mulai menonton film-film yang sudah lama ingin aku nonton. Aku menonton film-film drama korea yang sedang populer saat ini.
+        Aku merasa terhibur dan mendapatkan banyak insprirasi dari cerita-cerita di film tersebut. setiap sore aku diajak abangku untuk lari sore di Stadion Pakansari Cilodong..
+        </p>
+        <p class="center">
+          Walaupun hanya di rumah, liburan ini terasa hangat karena aku lebih sering bersama keluarga. Aku bisa mengobrol lebih lama dengan ayah, membantu ibu tanpa terburu-buru, dan bermain dengan adik.
+        Sesekali aku juga melakukan panggilan video dengan teman-teman agar tetap akrab. Dari liburan ini aku belajar bahwa bahagia tidak selalu harus dicari di tempat jauh.
+        Rumah juga bisa menjadi tempat liburan yang menyenangkan jika kita pandai mengisi waktu. 
+        Aku merasa liburan kali ini membuatku lebih segar, lebih dekat dengan keluarga, dan lebih semangat untuk kembali belajar
+        </p>
+        <p class="left">
+          Dari pengalaman liburan kali ini, aku jadi belajar untuk lebih bersyukur atas hal-hal sederhana.
+        Ternyata kebahagiaan tidak selalu datang dari perjalanan yang jauh, tetapi dari momen kecil yang kita jalani dengan tulus.
+        Aku merasa lebih tenang, lebih dekat dengan keluarga, dan lebih menghargai waktu bersama mereka.
+        Liburan sederhana di rumah ini justru menjadi kenangan yang berharga dan memberi semangat baru untuk menghadapi semester berikutnya.
+        </p>
+        <div class="gallery-title">Galeri Foto Liburan</div>
+        <div class="gallery-flex">
+          <img src="Photo1.jpg" alt="Dirumah aja">
+          <img src="Photo2.jpg" alt="akan-makan">
+          <img src="Photo3.jpg" alt="Acara dirumah">
+          <img src="Photo4.jpg" alt="Lapangan Pakansari">
+          <img src="Photo5.jpg" alt="Ber4 di halaman rumah">
+          <img src="Photo6.jpg" alt="Ulta">
+          <img src="Photo7.jpg" alt="Selfie ber3">
+        </div>
+    </section>
+    <footer>
+      &copy; 2025 Engela K Taebenu. All rights reserved.
+    </footer>
+</body>
+</html>
